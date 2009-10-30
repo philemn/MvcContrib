@@ -6,7 +6,7 @@ using MvcContrib.IncludeHandling;
 using MvcContrib.IncludeHandling.Configuration;
 using MvcContrib.Interfaces;
 using MvcContrib.Services;
-using MvcContrib.TestHelper;
+using MvcContrib.TestHelper.RhinoMocks;
 using NUnit.Framework;
 using Rhino.Mocks;
 

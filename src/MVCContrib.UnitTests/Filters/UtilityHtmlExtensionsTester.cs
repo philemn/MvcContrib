@@ -7,6 +7,7 @@ using MvcContrib.Filters;
 using MvcContrib.TestHelper;
 using NUnit.Framework;
 using Rhino.Mocks;
+using MvcContrib.TestHelper.RhinoMocks;
 
 namespace MvcContrib.UnitTests.Filters
 {

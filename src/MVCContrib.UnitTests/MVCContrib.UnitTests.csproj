@@ -73,6 +73,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\bin\unity\Microsoft.Practices.Unity.dll</HintPath>
     </Reference>
+    <Reference Include="Moq, Version=4.0.812.4, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\moq\Moq.dll</HintPath>
+    </Reference>
     <Reference Include="Mvp.Xml, Version=2.0.2158.1055, Culture=neutral, PublicKeyToken=dd92544dc05f5671, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\bin\mvpxml\Mvp.Xml.dll</HintPath>
@@ -283,12 +287,17 @@
     <Compile Include="SparkViewEngine\ViewSourceLoaderAdapterTester.cs" />
     <Compile Include="SubControllerTester.cs" />
     <Compile Include="TestHelper\ActionResultHelperTester.cs" />
-    <Compile Include="TestHelper\ControllerBuilderTests.cs" />
-    <Compile Include="TestHelper\RouteTestingExtensionsTester.cs" />
-    <Compile Include="TestHelper\SessionTests.cs" />
+    <Compile Include="TestHelper\GeneralTestExtensionsTests.cs" />
+    <Compile Include="TestHelper\Moq\ControllerBuilderTests.cs" />
+    <Compile Include="TestHelper\Moq\RouteTestingExtensionsTester.cs" />
+    <Compile Include="TestHelper\Moq\SessionTests.cs" />
+    <Compile Include="TestHelper\Moq\WriteableHttpFileCollectionTests.cs" />
+    <Compile Include="TestHelper\RhinoMocks\ControllerBuilderTests.cs" />
+    <Compile Include="TestHelper\RhinoMocks\RouteTestingExtensionsTester.cs" />
+    <Compile Include="TestHelper\RhinoMocks\SessionTests.cs" />
+    <Compile Include="TestHelper\RhinoMocks\WriteableHttpFileCollectionTests.cs" />
     <Compile Include="TestHelper\TestHelperController.cs" />
     <Compile Include="TestHelper\TestHelperWithArgsController.cs" />
-    <Compile Include="TestHelper\WriteableHttpFileCollectionTests.cs" />
     <Compile Include="UI\BlockRendererTester.cs" />
     <Compile Include="UI\CapturingResponseFilterTester.cs" />
     <Compile Include="UI\ASPXViewEngine\AutoTypeViewPageTester.cs" />
@@ -379,6 +388,14 @@
     <ProjectReference Include="..\MvcContrib.StructureMap\MvcContrib.StructureMap.csproj">
       <Project>{6DE6FAEF-F974-4641-990E-FFE8728E5E16}</Project>
       <Name>MvcContrib.StructureMap</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MvcContrib.TestHelper.Moq\MvcContrib.TestHelper.Moq.csproj">
+      <Project>{DFFA4642-0DB6-432C-958A-0A2372B8E1F4}</Project>
+      <Name>MvcContrib.TestHelper.Moq</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MvcContrib.TestHelper.RhinoMocks\MvcContrib.TestHelper.RhinoMocks.csproj">
+      <Project>{CF35B670-4CA3-4AE5-8AAF-21B1E6B9219E}</Project>
+      <Name>MvcContrib.TestHelper.RhinoMocks</Name>
     </ProjectReference>
     <ProjectReference Include="..\MvcContrib.TestHelper\MvcContrib.TestHelper\MvcContrib.TestHelper.csproj">
       <Project>{F2A3F400-A20E-4B83-959B-EBD14D6C143E}</Project>

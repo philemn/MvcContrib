@@ -6,7 +6,7 @@ using System.Web.SessionState;
 
 namespace MvcContrib.TestHelper
 {
-	internal class MockSession : HttpSessionStateBase
+	public class MockSession : HttpSessionStateBase
 	{
 		private readonly IDictionary _objects;
 
